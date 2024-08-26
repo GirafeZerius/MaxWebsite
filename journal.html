@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="slideshow" src="878de170d3fc7d6192e01522882daa2ece996418.jpg" alt="Slideshow Image">
+
+    <script>
+        const images = [
+            '878de170d3fc7d6192e01522882daa2ece996418.jpg',
+            'black vintage newspaper birthday party poster-modified.png'
+        ];
+
+        const videoUrl = 'https://www.youtube.com/watch?v=0FY8qL41618'; // Replace with your video URL
+
+        let currentIndex = 0;
+
+        function changeImage() {
+            // Randomly decide whether to open the video (10% chance)
+            if (Math.random() < 0.1) {
+                window.open(videoUrl, '_blank');
+            } else {
+                // Change the image
+                currentIndex = (currentIndex + 1) % images.length;
+                document.getElementById('slideshow').src = images[currentIndex];
+            }
+        }
+
+        // Change image every 3 seconds
+        setInterval(changeImage, 3000);
+    </script>
+
+</body>
+</html>
