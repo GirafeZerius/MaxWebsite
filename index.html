@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max the Dog - Official Website | Windows NT Compatible</title>
+    <style>
+        /* Windows NT Era Website Styles */
+        body {
+            font-family: 'MS Sans Serif', Arial, sans-serif;
+            background: #c0c0c0;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            font-size: 11px;
+        }
+        
+        /* Windows NT Header Bar */
+        .nt-header {
+            background: linear-gradient(to bottom, #000080, #1084d0);
+            color: #fff;
+            padding: 8px 15px;
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        /* Main Container with Windows NT styling */
+        .main-container {
+            max-width: 1024px;
+            margin: 0 auto;
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            padding: 10px;
+        }
+        
+        /* Center content */
+        .main-content {
+            text-align: center;
+        }
+        
+        .main-content > * {
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .main-content .nt-title,
+        .main-content .green-line,
+        .main-content .image-container,
+        .main-content #space-for-image,
+        .main-content .plans,
+        .main-content #banana-section,
+        .main-content .watermark,
+        .main-content div[style*="text-align: center"] {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Table-based layout (classic 90s style) */
+        .content-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: #c0c0c0;
+        }
+        
+        .content-table td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        
+        /* Left sidebar */
+        .sidebar {
+            width: 200px;
+            background: #c0c0c0;
+            border: 2px inset #c0c0c0;
+            padding: 10px;
+        }
+        
+        /* Main content area */
+        .main-content {
+            background: #ffffff;
+            border: 2px inset #c0c0c0;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        /* Center content within main-content */
+        .main-content > * {
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Center specific elements */
+        .main-content .nt-title,
+        .main-content .green-line,
+        .main-content .image-container,
+        .main-content #space-for-image,
+        .main-content .plans,
+        .main-content #banana-section,
+        .main-content .watermark {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .main-content .nt-textbox {
+            text-align: left;
+        }
+        
+        /* Right sidebar for ads */
+        .ad-sidebar {
+            width: 160px;
+            background: #c0c0c0;
+            border: 2px inset #c0c0c0;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        /* Windows NT style buttons */
+        .nt-button {
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            padding: 4px 12px;
+            font-family: 'MS Sans Serif', Arial, sans-serif;
+            font-size: 11px;
+            cursor: pointer;
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .nt-button:hover {
+            background: #d4d0c8;
+        }
+        
+        .nt-button:active {
+            border: 2px inset #c0c0c0;
+        }
+        
+        /* Banner ads styling */
+        .banner-ad {
+            margin: 10px 0;
+            border: 2px inset #c0c0c0;
+            background: #fff;
+            padding: 5px;
+        }
+        
+        .banner-ad img {
+            width: 100%;
+            height: auto;
+            display: block;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+        }
+        
+        /* Prototype dog section */
+        .prototype-dog {
+            text-align: center;
+            padding: 15px;
+            background: #e0e0e0;
+            border: 3px outset #c0c0c0;
+            margin: 20px 0;
+        }
+        
+        .prototype-dog img {
+            border: 2px inset #c0c0c0;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+            max-width: 150px;
+        }
+        
+        /* Windows NT style title */
+        .nt-title {
+            background: linear-gradient(to right, #000080, #1084d0);
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 16px;
+            border: 2px outset #c0c0c0;
+            margin: 10px 0;
+        }
+        
+        /* Status bar */
+        .status-bar {
+            background: #c0c0c0;
+            border-top: 2px inset #c0c0c0;
+            padding: 3px 10px;
+            font-size: 11px;
+            color: #000;
+        }
+        
+        /* Links in Windows NT style */
+        a {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: #800080;
+        }
+        
+        a:hover {
+            color: #ff00ff;
+            background: #ffff00;
+        }
+        
+        /* Windows NT style text boxes */
+        .nt-textbox {
+            background: #ffffff;
+            border: 2px inset #c0c0c0;
+            padding: 8px;
+            font-family: 'MS Sans Serif', Arial, sans-serif;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+        
+        /* Horizontal rule Windows NT style */
+        hr {
+            border: none;
+            border-top: 2px inset #c0c0c0;
+            margin: 15px 0;
+        }
+        
+        /* Windows NT style list */
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 10px 0;
+        }
+        
+        ul li {
+            margin: 5px 0;
+            padding-left: 15px;
+        }
+        
+        ul li::before {
+            content: '▶ ';
+            color: #000080;
+            font-weight: bold;
+            margin-left: -15px;
+        }
+        
+        /* Green line clickable */
+        .green-line {
+            border-top: 8px double #008000;
+            border-bottom: 4px solid #008000;
+            margin: 20px auto;
+            padding: 10px;
+            cursor: pointer;
+            background: #c0ffc0;
+            border-left: 3px outset #c0c0c0;
+            border-right: 3px outset #c0c0c0;
+            max-width: 90%;
+            box-shadow: inset 1px 1px 0px #fff;
+        }
+        
+        .green-line:hover {
+            background: #90ff90;
+        }
+        
+        .green-line p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #006600;
+            font-size: 12px;
+        }
+        
+        /* Image container */
+        .image-container {
+            margin-top: 30px;
+            padding: 15px;
+            background: #ffffff;
+            border: 3px outset #c0c0c0;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .image-container img {
+            width: 300px;
+            border: 2px inset #c0c0c0;
+            display: block;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+            margin: 0 auto;
+        }
+        
+        .caption {
+            font-size: 12px;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #000080;
+        }
+        
+        /* Plans styling */
+        .plans {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 15px;
+        }
+        
+        .plan {
+            border: 3px outset #c0c0c0;
+            background: #ffffff;
+            padding: 15px;
+            width: 220px;
+            text-align: left;
+        }
+        
+        .plan h2 {
+            color: #000080;
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #c0c0c0;
+            padding-bottom: 5px;
+        }
+        
+        .plan p {
+            margin-bottom: 8px;
+            line-height: 1.5;
+            font-size: 11px;
+        }
+        
+        /* Banana section */
+        #banana-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #ffffcc;
+            border: 3px outset #c0c0c0;
+            display: inline-block;
+            max-width: 90%;
+            text-align: center;
+        }
+        
+        #banana-section img {
+            width: 50px;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+        }
+        
+        .banana-text {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #006600;
+            font-size: 11px;
+        }
+        
+        /* Blue text clickable */
+        .blue-text {
+            color: #0000ff;
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .blue-text:hover {
+            color: #ff00ff;
+            background: #ffff00;
+        }
+        
+        /* Watermark */
+        .watermark {
+            font-size: 11px;
+            margin-top: 30px;
+            padding: 15px;
+            background: #e0e0e0;
+            border: 2px inset #c0c0c0;
+            display: inline-block;
+            text-align: left;
+        }
+        
+        /* Footer text */
+        .footer-text {
+            color: #000;
+            cursor: pointer;
+            margin-top: 20px;
+            padding: 10px;
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .footer-text:hover {
+            background: #d4d0c0;
+        }
+        
+        /* Banner image */
+        .banner {
+            width: 100%;
+            height: auto;
+            border-bottom: 4px solid #000;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+            display: block;
+        }
+        
+        /* Blink animation */
+        .blink {
+            animation: blink-text 1s step-start infinite;
+        }
+        
+        @keyframes blink-text {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        /* Highlight */
+        .highlight {
+            color: #ffff00;
+            background: #000080;
+            padding: 2px 6px;
+            text-shadow: 1px 1px 0px #000;
+            border: 1px outset #c0c0c0;
+        }
+        
+        /* Space for image */
+        #space-for-image {
+            margin-top: 20px;
+            padding: 10px;
+            background: #ffffff;
+            border: 2px outset #c0c0c0;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        #space-for-image img {
+            width: 200px;
+            border: 2px inset #c0c0c0;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+        }
+        
+        /* Netscape badge */
+        .netscape-badge {
+            background: #ff6600;
+            color: #fff;
+            padding: 3px 8px;
+            border: 2px outset #c0c0c0;
+            font-size: 10px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        /* Visitor counter */
+        .visitor-counter {
+            background: #000080;
+            color: #ffff00;
+            padding: 5px 10px;
+            border: 2px inset #c0c0c0;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            font-size: 11px;
+        }
+        
+        /* Fake Popup Ad */
+        .fake-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 99999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .fake-popup-window {
+            background: #c0c0c0;
+            border: 3px outset #c0c0c0;
+            width: 400px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .fake-popup-header {
+            background: linear-gradient(to right, #000080, #1084d0);
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+        }
+        
+        .fake-popup-close {
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
+            line-height: 1;
+            padding: 0;
+            cursor: pointer;
+            color: #000;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .fake-popup-close:hover {
+            background: #d4d0c8;
+        }
+        
+        .fake-popup-close:active {
+            border: 2px inset #c0c0c0;
+        }
+        
+        .fake-popup-body {
+            padding: 20px;
+            background: #ffffff;
+            text-align: center;
+        }
+        
+        .fake-popup-body h3 {
+            color: #000080;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        
+        .fake-popup-body p {
+            margin: 10px 0;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        
+        .fake-popup-button {
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            padding: 6px 20px;
+            font-family: 'MS Sans Serif', Arial, sans-serif;
+            font-size: 11px;
+            cursor: pointer;
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            margin: 10px 5px;
+        }
+        
+        .fake-popup-button:hover {
+            background: #d4d0c8;
+        }
+        
+        .fake-popup-button:active {
+            border: 2px inset #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Windows NT Header -->
+    <div class="nt-header">
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>Max the Dog - Official Website</td>
+                <td align="right" style="font-size: 11px;">Windows NT 4.0 Compatible</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Banner Image -->
+        <img src="Capture_decran_2024-05-20_204042.png" alt="Max the Dog Banner" class="banner">
+        
+        <table class="content-table" cellpadding="0" cellspacing="5">
+            <tr>
+                <!-- Left Sidebar -->
+                <td class="sidebar" width="200">
+                    <div class="nt-title" style="font-size: 12px;">Navigation</div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="announcement.html">Announcements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                        <li><a href="supporterplan.html">Plans</a></li>
+                    </ul>
+                    
+                    <hr>
+                    
+                    <div class="prototype-dog">
+                        <div style="font-weight: bold; margin-bottom: 10px; color: #000080; font-size: 12px;">Prototype Version</div>
+                        <img src="../gifs/guardog.gif" alt="Prototype Dog">
+                        <p style="font-size: 10px; margin-top: 10px; color: #666;">
+                            Early development version of Max the Dog
+                        </p>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div style="font-size: 10px; color: #666; text-align: center; padding: 10px; background: #e0e0e0; border: 2px inset #c0c0c0;">
+                        <strong>Best viewed in:</strong><br>
+                        Internet Explorer 4.0+<br>
+                        Netscape Navigator 4.0+<br>
+                        <br>
+                        <strong>Resolution:</strong><br>
+                        800x600 or higher
+                    </div>
+                    
+                    <hr>
+                    
+                    <!-- Bonzi.link style GIFs -->
+                    <div style="text-align: center; margin: 10px 0;">
+                        <img src="../gifs/hund098.gif" alt="Dog" class="bonzi-gif" style="max-width: 100px;">
+                        <img src="../gifs/tiere_tr54.gif" alt="Animal" class="bonzi-gif" style="max-width: 100px;">
+                    </div>
+                    
+                    <div style="text-align: center; margin: 10px 0;">
+                        <span class="bonzi-badge">NEW!</span>
+                        <span class="bonzi-badge">HOT!</span>
+                        <span class="bonzi-badge">COOL!</span>
+                    </div>
+                    
+                    <marquee behavior="scroll" direction="left" scrollamount="3" class="bonzi-marquee">
+                        <span class="bonzi-blink-fast">⭐ FREE DOWNLOAD! ⭐</span>
+                    </marquee>
+                </td>
+                
+                <!-- Main Content -->
+                <td class="main-content">
+                    <!-- Important Notice -->
+                    <div class="green-line">
+                        <p>Note: He actually learns from you.</p>
+                    </div>
+                    
+                    <!-- Bonzi.link style header with GIFs -->
+                    <div style="text-align: center; margin: 15px 0;">
+                        <img src="../gifs/img19.gif" alt="Decoration" class="bonzi-gif" style="max-width: 80px; vertical-align: middle;">
+                        <span class="bonzi-rainbow" style="font-size: 20px; margin: 0 10px;">Welcome to Max the Dog!</span>
+                        <img src="../gifs/img19.gif" alt="Decoration" class="bonzi-gif" style="max-width: 80px; vertical-align: middle;">
+        </div>
+        
+                    <!-- Main Title -->
+                    <div class="nt-title">Welcome to the <span class="highlight">Max the Dog</span> Website!</div>
+                    
+                    <!-- Bonzi.link style marquee -->
+                    <marquee behavior="alternate" direction="left" scrollamount="4" class="bonzi-marquee" style="margin: 10px 0;">
+                        <span class="bonzi-text">🎉 THE BEST DESKTOP COMPANION SINCE 1998! 🎉</span>
+                    </marquee>
+                    
+                    <!-- Main Content Text -->
+                    <div class="nt-textbox" style="margin: 15px 0;">
+                        <p style="margin: 10px 0;">
+                            Welcome to the world of Max the dog! Max will explore the Internet with you as your very own friend and sidekick. He can talk, walk, joke, browse, search, e-mail, and download like no other friend you've ever had. Max even has the ability to compare prices on the products you love and help you save money! Best of all, he's FREE!
+                        </p>
+                    </div>
+                    
+                    <!-- Max Image -->
+        <div class="image-container">
+            <img src="max.png" alt="Max the Dog">
+            <div class="caption">
+                            <p>Max the dog helps you browse the web.</p>
+                            <p>Max the dog can play games with you!</p>
+            </div>
+        </div>
+
+                    <!-- Download Link -->
+                    <div style="text-align: center; margin: 20px 0;">
+                        <a href="#" onclick="openMaxWizard(); return false;" style="font-size: 16px; font-weight: bold; color: #0000ff; text-decoration: underline; cursor: pointer;">
+                            Download NOW!
+                        </a>
+                    </div>
+                    
+                    <script>
+                        function openMaxWizard() {
+                            try {
+                                // First try postMessage (most reliable for iframes)
+                                if (window.parent) {
+                                    window.parent.postMessage({ type: 'openMaxWizard' }, '*');
+                                }
+                                
+                                // Also try direct function call
+                                if (window.parent && typeof window.parent.openMaxWizardWindow === 'function') {
+                                    window.parent.openMaxWizardWindow();
+                                } else if (window.top && typeof window.top.openMaxWizardWindow === 'function') {
+                                    window.top.openMaxWizardWindow();
+                                }
+                            } catch (e) {
+                                console.error('Error opening wizard:', e);
+                                // Try postMessage as fallback
+                                if (window.parent) {
+                                    window.parent.postMessage({ type: 'openMaxWizard' }, '*');
+                                }
+                            }
+                        }
+                        
+                        // Make function globally accessible
+                        window.openMaxWizard = openMaxWizard;
+                    </script>
+                    
+                    <!-- Browser Generation Section -->
+        <div id="space-for-image">
+            <img src="maxbrowser.png" alt="GeneratedGames">
+        </div>
+
+                    <p style="font-size: 14px; font-weight: bold; color: #000080; margin: 15px 0; text-align: center;">
+                        You can make him generate browsers for you!
+        </p>
+
+                    <!-- Plans Section -->
+        <div class="plans">
+            <div class="plan">
+                            <h2>Basic Plan</h2>
+                            <p><strong>Free!</strong></p>
+                            <p>Access to basic features</p>
+                            <p>Can't generate games!</p>
+            </div>
+            <div class="plan">
+                            <h2>Supporter Plan</h2>
+                            <p><strong>Free!</strong></p>
+                            <p>Access to advanced features</p>
+                            <p>Required long use of the program</p>
+                            <p>Priority support and access to basic games!</p>
+            </div>
+            <div class="plan">
+                            <h2>Premium Package</h2>
+                            <p><strong style="color: #ff0000; font-size: 18px;">$29.99/month</strong></p>
+                            <p>Access to all features</p>
+                            <p>Allows For Game of your choice!</p>
+                            <p>24/7 support</p>
+                            <a class="nt-button" href="contact.html" style="margin-top: 10px; display: block; text-align: center;">Buy Premium</a>
+            </div>
+        </div>
+
+                    <!-- Banana Section -->
+        <div id="banana-section">
+                        <div style="text-align: center; margin-bottom: 10px;">
+                            <img src="banana24.gif" alt="Banana" style="margin: 0 10px;">
+                            <img src="../gifs/K7LYWERWWRKWNICSX6MSRSARIE5DZJJD.gif" alt="GIF" class="bonzi-gif" style="max-width: 60px; vertical-align: middle;">
+                            <img src="../gifs/TGL2BCRPLBSP53LV25R3EPWAHWYVAJNH.gif" alt="GIF" class="bonzi-gif" style="max-width: 60px; vertical-align: middle;">
+                        </div>
+                        <p class="banana-text">Keeps you informed of late breaking news!</p>
+                        <p class="banana-text">He organizes the Internet the way you want it!</p>
+                        <p class="banana-text">He will make you smile throughout your day with his little dog personality!</p>
+                        
+                        <div style="text-align: center; margin: 15px 0;">
+                            <span class="bonzi-badge">100% FREE!</span>
+                            <span class="bonzi-badge">NO VIRUS!</span>
+                            <span class="bonzi-badge">SAFE!</span>
+                        </div>
+                        
+            <marquee behavior="scroll" direction="left" scrollamount="4" style="margin-top: 15px;">
+                            <p class="blue-text" onclick="window.location.href='announcement.html';" style="font-size: 12px; padding: 5px; background: #ffff00; cursor: pointer;">
+                                DONT DOWNLOAD MAX, ITS NOT TOO LATE GO BACK
+                </p>
+            </marquee>
+                        
+                        <marquee behavior="alternate" direction="right" scrollamount="3" style="margin-top: 10px;">
+                            <span class="bonzi-text">Click <a href="announcement.html" class="bonzi-link">HERE</a> for announcements!</span>
+            </marquee>
+        </div>
+
+                    <!-- Watermark/Footer -->
+        <div class="watermark">
+            <p><strong>Max The Dog ©️</strong></p>
+            <p style="color: #800000; font-weight: bold;">1989 - 2005</p>
+                        <p>The app runs on Windows NT, XP, and 98</p>
+            <p style="margin-top: 10px;">
+                            <span class="blue-text blink" onclick="window.location.href='journal.html';" style="cursor: pointer;">
+                                Click here to see the journal about Windows 98! (Don't.)
+                </span>
+            </p>
+        </div>
+
+                </td>
+                
+                <!-- Right Sidebar - Ads -->
+                <td class="ad-sidebar" width="160">
+                    <div class="nt-title" style="font-size: 11px;">Advertisement</div>
+                    
+                    <!-- Fake Banner Ads -->
+                    <div class="banner-ad">
+                        <img src="../gifs/banners_fake_ads/2BLWXBB53D5SMGNB2EY7B6TLIWLU4AB4.gif" alt="Advertisement">
+                    </div>
+                    
+                    <div class="banner-ad">
+                        <img src="../gifs/banners_fake_ads/47ZFAJHEB2EMGBPXR4P27FHS2PXXOZJT.gif" alt="Advertisement">
+                    </div>
+                    
+                    <div class="banner-ad">
+                        <img src="../gifs/banners_fake_ads/CF43KYC5VAYZR7UVEAHAF3PM2AJ5VUGK.gif" alt="Advertisement">
+                    </div>
+                    
+                    <div class="banner-ad">
+                        <img src="../gifs/banners_fake_ads/DUKWZPJVWLY42MHQQ4SKLULDXAPTUHDR.gif" alt="Advertisement">
+                    </div>
+                    
+                    <div class="banner-ad">
+                        <img src="../gifs/banners_fake_ads/KMXZS4LHUR74CH5AI7VYSFX56XW77B2F.gif" alt="Advertisement">
+                    </div>
+                    
+                    <div class="banner-ad">
+                        <img src="../gifs/banners_fake_ads/UR2GYSA24K6MXVXWRJEVURVHHB7C5BHS.gif" alt="Advertisement">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+
+    <!-- Fake Popup Ad -->
+    <div class="fake-popup-overlay" id="fakePopupOverlay">
+        <div class="fake-popup-window">
+            <div class="fake-popup-header">
+                <span>Advertisement</span>
+                <button class="fake-popup-close" onclick="closeFakePopup()">×</button>
+            </div>
+            <div class="fake-popup-body">
+                <h3>🎉 Special Offer! 🎉</h3>
+                <p>You've won a FREE download of Max the Dog!</p>
+                <p>Click below to claim your prize now!</p>
+                <div style="margin-top: 15px;">
+                    <button class="fake-popup-button" onclick="closeFakePopup()">Download Now!</button>
+                    <button class="fake-popup-button" onclick="closeFakePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    This website is best viewed in Internet Explorer 5.0 or higher | 
+                    Recommended resolution: 800x600 or higher
+                </td>
+                <td align="right">
+                    <span class="visitor-counter">👁️ Visitors: <span id="visitor-count">008426</span></span>
+                </td>
+            </tr>
+        </table>
+        <div style="text-align: center; margin-top: 5px; font-size: 10px;">
+            <span class="blink">█</span> Last update: 1998 | 
+            <span class="netscape-badge">Optimized for Netscape Navigator 4.0+</span>
+            <span class="bonzi-badge" style="background: #00ff00; color: #000;">Under Construction</span>
+        </div>
+        
+        <!-- Bonzi.link style footer GIFs -->
+        <div style="text-align: center; margin-top: 10px;">
+            <img src="../gifs/V3VTN7ZXANGUFRVPOTCH237LG6OERRCG.gif" alt="Footer GIF" class="bonzi-gif" style="max-width: 50px;">
+            <span style="color: #ff00ff; font-weight: bold; margin: 0 10px;">Made with ❤️ in 1998</span>
+            <img src="../gifs/V3VTN7ZXANGUFRVPOTCH237LG6OERRCG.gif" alt="Footer GIF" class="bonzi-gif" style="max-width: 50px;">
+        </div>
+        
+        <marquee behavior="scroll" direction="left" scrollamount="2" style="margin-top: 10px; background: #000080; color: #ffff00; padding: 3px;">
+            <span>🌟 Join thousands of happy users! 🌟 Download Max the Dog today! 🌟</span>
+        </marquee>
+    </div>
+
+    <!-- Visitor Counter Script -->
+    <script>
+        function updateVisitorCount() {
+            const base = 8426;
+            const random = Math.floor(Math.random() * 100);
+            const count = base + random;
+            const countElement = document.getElementById('visitor-count');
+            if (countElement) {
+                countElement.textContent = String(count).padStart(6, '0');
+            }
+        }
+        updateVisitorCount();
+        setInterval(updateVisitorCount, 5000);
+        
+        // Audio for welcome message
+        let welcomeAudio = null;
+        let userInteracted = false;
+        let popupShown = false;
+        let audioPlayed = false;
+        
+        // Check if this is the main index page (not a subpage)
+        // Since we're in an iframe, check by filename or document title
+        const currentPath = window.location.pathname || window.location.href;
+        const isMainIndex = currentPath.includes('index.html') && 
+                           !currentPath.includes('journal') &&
+                           !currentPath.includes('contact') &&
+                           !currentPath.includes('announcement') &&
+                           !currentPath.includes('supporterplan') &&
+                           !currentPath.includes('Admin');
+        
+        // Check if we've already visited the main index in this session
+        const hasVisitedMainIndex = sessionStorage.getItem('maxthedog_mainIndex_visited') === 'true';
+        
+        function loadWelcomeAudio() {
+            try {
+                welcomeAudio = new Audio('voice.wav');
+                welcomeAudio.volume = 0.8;
+                welcomeAudio.preload = 'auto';
+                console.log('Welcome audio loaded');
+            } catch (e) {
+                console.error('Error loading audio:', e);
+            }
+        }
+        
+        function playWelcomeAudio() {
+            // Only play if this is the main index page and hasn't been played before
+            if (welcomeAudio && !audioPlayed && isMainIndex && !hasVisitedMainIndex) {
+                audioPlayed = true;
+                // Mark that we've visited the main index
+                sessionStorage.setItem('maxthedog_mainIndex_visited', 'true');
+                welcomeAudio.play().catch(e => {
+                    console.warn('Could not play welcome audio:', e);
+                });
+            }
+        }
+        
+        function showFakePopup() {
+            if (popupShown) return;
+            popupShown = true;
+            const overlay = document.getElementById('fakePopupOverlay');
+            if (overlay) {
+                overlay.style.display = 'flex';
+                console.log('Popup shown');
+            }
+        }
+        
+        function closeFakePopup() {
+            const overlay = document.getElementById('fakePopupOverlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+                console.log('Popup closed');
+                // Play audio when user closes popup (only on main index, first visit)
+                playWelcomeAudio();
+            }
+        }
+        
+        // Track user interaction (but don't prevent popup)
+        let interactionCount = 0;
+        function markUserInteraction() {
+            interactionCount++;
+        }
+        
+        // Add event listeners for user interaction tracking
+        document.addEventListener('click', markUserInteraction, { once: false });
+        document.addEventListener('keydown', markUserInteraction, { once: false });
+        
+        // Track TTS status from parent window
+        let ttsWasPlayed = false;
+        
+        // Listen for TTS status message from parent window
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.type === 'ttsStatus') {
+                ttsWasPlayed = event.data.ttsPlayed === true;
+                console.log('TTS status received:', ttsWasPlayed);
+            }
+        });
+        
+        // Load audio and setup popup timer (only on main index)
+        if (isMainIndex) {
+            window.addEventListener('load', function() {
+                loadWelcomeAudio();
+                
+                // Request TTS status from parent window
+                try {
+                    if (window.parent) {
+                        window.parent.postMessage({ type: 'requestTTSStatus' }, '*');
+                    }
+                } catch (e) {
+                    console.warn('Could not request TTS status:', e);
+                }
+                
+                // Wait a bit for the message to be received, then check
+                setTimeout(function() {
+                    // Only show popup if TTS was NOT played
+                    if (!ttsWasPlayed) {
+                        // Show popup after 10 seconds regardless of interaction
+                        setTimeout(function() {
+                            if (!popupShown && !ttsWasPlayed) {
+                                showFakePopup();
+                            }
+                        }, 10000);
+                    } else {
+                        // TTS was already played, skip popup
+                        console.log('TTS already played, skipping popup');
+                    }
+                }, 500); // Wait 500ms for message to be received
+            });
+        }
+    </script>
+</body>
+</html>

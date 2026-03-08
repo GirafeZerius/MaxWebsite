@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Resources - Max the Dog</title>
+    <style>
+        /* Windows NT Era Website Styles */
+        body {
+            font-family: 'MS Sans Serif', Arial, sans-serif;
+            background: #c0c0c0;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            font-size: 11px;
+        }
+        
+        .nt-header {
+            background: linear-gradient(to bottom, #000080, #1084d0);
+            color: #fff;
+            padding: 8px 15px;
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .main-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            padding: 15px;
+        }
+        
+        .nt-title {
+            background: linear-gradient(to right, #000080, #1084d0);
+            color: #fff;
+            padding: 8px 15px;
+            font-weight: bold;
+            font-size: 18px;
+            border: 2px outset #c0c0c0;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .welcome-box {
+            background: #ffffff;
+            border: 2px inset #c0c0c0;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .welcome-box h2 {
+            color: #000080;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        
+        .panels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .panel {
+            background: #ffffff;
+            border: 3px outset #c0c0c0;
+            padding: 15px;
+            width: 300px;
+            min-height: 200px;
+        }
+        
+        .panel h2 {
+            color: #000080;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 14px;
+            border-bottom: 2px solid #c0c0c0;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        
+        .panel p {
+            margin: 8px 0;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+        
+        .panel-activity-logs {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .activity-log {
+            background: #e0e0e0;
+            border: 1px inset #c0c0c0;
+            padding: 5px;
+            margin: 5px 0;
+            font-size: 10px;
+        }
+        
+        .nt-button {
+            background: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            padding: 6px 15px;
+            font-family: 'MS Sans Serif', Arial, sans-serif;
+            font-size: 11px;
+            cursor: pointer;
+            color: #000;
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .nt-button:hover {
+            background: #d4d0c8;
+        }
+        
+        .nt-button:active {
+            border: 2px inset #c0c0c0;
+        }
+        
+        a {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: #800080;
+        }
+        
+        a:hover {
+            color: #ff00ff;
+            background: #ffff00;
+        }
+        
+        .status-bar {
+            background: #c0c0c0;
+            border-top: 2px inset #c0c0c0;
+            padding: 3px 10px;
+            font-size: 11px;
+            color: #000;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .info-box {
+            background: #ffffcc;
+            border: 2px inset #c0c0c0;
+            padding: 10px;
+            margin: 15px 0;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nt-header">
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>Max the Dog - Developer Resources</td>
+                <td align="right" style="font-size: 11px;">Windows NT 4.0 Compatible</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="main-container">
+        <div class="nt-title">Developer Resources & Tools</div>
+        
+        <div class="welcome-box">
+            <h2>Welcome, <span id="developer-name"></span>!</h2>
+            <p>This is a developer resource page where you can access tools, activity logs, and testing environments related to Max the Dog development.</p>
+        </div>
+        
+        <div class="info-box">
+            <strong>⚠️ Note:</strong> This page is intended for developers and contributors working on Max the Dog. Some tools may require special access.
+        </div>
+        
+        <div class="panels">
+            <div class="panel panel-activity-logs">
+                <h2>Activity Logs</h2>
+                <div class="activity-log">
+                    <strong>2005:</strong> Laura Swanson ran Max The Dog
+                </div>
+                <div class="activity-log">
+                    <strong>2004:</strong> Anonymous ran Max The Dog
+                </div>
+                <div class="activity-log">
+                    <strong>2003:</strong> Anonymous ran Max The Dog
+                </div>
+                <div class="activity-log">
+                    <strong>2002:</strong> System update - Version 2.1 released
+                </div>
+                <div class="activity-log">
+                    <strong>2001:</strong> Beta testing phase completed
+                </div>
+                <div class="activity-log">
+                    <strong>2000:</strong> Windows 2000 compatibility added
+                </div>
+                <div class="activity-log">
+                    <strong>1999:</strong> Premium features implemented
+                </div>
+                <div class="activity-log">
+                    <strong>1998:</strong> Initial release of Max The Dog
+                </div>
+            </div>
+            
+            <div class="panel panel-tools">
+                <h2>Development Tools</h2>
+                <p>Access development and testing tools for Max the Dog:</p>
+                <a href="https://web.archive.org/web/20240705181834/https://cdn.discordapp.com/attachments/979794032156901476/1258849484079759410/MaxTracker.bat?ex=66898a71&is=668838f1&hm=42482d6bea134c3650d6a8ddbd3e556d106c55186db84c9005a1e1c63a82cb43&" class="nt-button" target="_blank">Max Technology Checker</a>
+                <a href="https://www.mediafire.com/file/mrbr4gkbyngn8oa/VHSTAPE.mp4/file" class="nt-button" target="_blank">Error Log Viewer</a>
+                <p style="margin-top: 15px; font-size: 10px; color: #666;">
+                    These tools are for development purposes only.
+                </p>
+            </div>
+            
+            <div class="panel panel-testing">
+                <h2>Testing Environment</h2>
+                <p>Access the testing environment for Max the Dog:</p>
+                <a href="https://98.js.org/" class="nt-button" target="_blank">Go to Testing Site</a>
+                <p style="margin-top: 15px; font-size: 10px; color: #666;">
+                    The testing site allows you to test Max the Dog in a simulated Windows 98 environment.
+                </p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="index.html" class="nt-button" style="display: inline-block;">← Back to Home</a>
+        </div>
+    </div>
+    
+    <div class="status-bar">
+        Max The Dog ©️ 1989 - 2005 | Windows NT, XP, and 98 Compatible | Developer Resources
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const names = ["Max Swanson", "Charles Vatoh", "Aaron Harper", "Enora Swanson"];
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const nameElement = document.getElementById('developer-name');
+            if (nameElement) {
+                nameElement.textContent = randomName;
+            }
+        });
+    </script>
+</body>
+</html>
